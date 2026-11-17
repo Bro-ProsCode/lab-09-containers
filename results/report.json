@@ -1,0 +1,117 @@
+{
+  "documents": 102,
+  "runs_by_machine": [
+    {
+      "host": "0be4c0471174",
+      "books": 102
+    },
+    {
+      "host": "169.254.11.25",
+      "books": 1
+    },
+    {
+      "host": "1dfd59b05e87",
+      "books": 3
+    },
+    {
+      "host": "Brody-GRAM",
+      "books": 3
+    },
+    {
+      "host": "bb1131fa0682",
+      "books": 1
+    },
+    {
+      "host": "ip-172-31-20-239",
+      "books": 101
+    },
+    {
+      "host": "udc-aw37-1",
+      "books": 101
+    }
+  ],
+  "last_processed": [
+    {
+      "_id": "pg996.txt",
+      "author": "Miguel de Cervantes Saavedra",
+      "bucket": "public-jac3nw",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-20-239",
+          "at": "2026-11-04 14:58:50.397000"
+        },
+        {
+          "host": "0be4c0471174",
+          "at": "2026-11-16 22:54:17.241000"
+        }
+      ],
+      "title": "Don Quixote",
+      "unique_words": 15574,
+      "vocabulary_ratio": 0.0359,
+      "word_count": 433304
+    },
+    {
+      "_id": "pg98.txt",
+      "author": "Charles Dickens",
+      "bucket": "public-jac3nw",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-20-239",
+          "at": "2026-11-04 14:58:50.034000"
+        },
+        {
+          "host": "udc-aw37-1",
+          "at": "2026-11-08 13:52:17.830000",
+          "job": "22671801_101"
+        },
+        {
+          "host": "0be4c0471174",
+          "at": "2026-11-16 22:54:16.623000"
+        }
+      ],
+      "title": "A Tale of Two Cities",
+      "unique_words": 9698,
+      "vocabulary_ratio": 0.07,
+      "word_count": 138490,
+      "llm_analysis": {
+        "summary": "Jerry Cruncher, a young messenger at Tellson's Bank, receives a mysterious package containing a letter from Mr. Jarvis Lorry, a lawyer. Intrigued, Jerry decides to investigate.",
+        "genre": "mystery",
+        "model": "Qwen/Qwen2.5-1.5B-Instruct",
+        "at": "2026-11-08 13:52:17.830000"
+      }
+    },
+    {
+      "_id": "pg963.txt",
+      "author": "Charles Dickens",
+      "bucket": "public-jac3nw",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-20-239",
+          "at": "2026-11-04 14:58:49.851000"
+        },
+        {
+          "host": "udc-aw37-1",
+          "at": "2026-11-08 13:52:18.684000",
+          "job": "22671801_100"
+        },
+        {
+          "host": "0be4c0471174",
+          "at": "2026-11-16 22:54:16.338000"
+        }
+      ],
+      "title": "Little Dorrit",
+      "unique_words": 14784,
+      "vocabulary_ratio": 0.0428,
+      "word_count": 345231,
+      "llm_analysis": {
+        "summary": "Mr Arthur Clennam arrives in London from Marseilles, where he witnessed a tragic event involving a ship sinking. He meets his estranged mother, Mrs Clennam, who is confined to her room due to health issues. During their reunion, Mr Clennam learns about his father's death and the financial troubles of the family. Mrs Clennam reveals that her husband, Jeremiah Flintwinch, proposes marriage to her despite their shared past.",
+        "genre": "historical fiction",
+        "model": "Qwen/Qwen2.5-1.5B-Instruct",
+        "at": "2026-11-08 13:52:18.684000"
+      }
+    }
+  ]
+}
