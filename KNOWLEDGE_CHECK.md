@@ -8,7 +8,7 @@ Assume you want to share your image with others and make it publicly available o
 
 **Your answer:** Give two reasons why this is a bad idea. Think of who could then read your credentials, and of what happens when your Learner Lab session ends.
 
-This is a bad idea because it allows anyone with the container to view your credentials and login as you elsewhere. It also makes the credentials invalid once the Learner Lab session ends since the container isn't mounting from your live session.
+This is a bad idea because it allows anyone with the image to view your credentials and login as you elsewhere. It also makes the credentials invalid once the Learner Lab session ends since the container isn't mounting from your live session.
 
 ## 2. Where did the Atlas password come from?
 
@@ -18,7 +18,7 @@ In Step 4, you ran the analysis once with `-v ~/.aws:/home/app/.aws:ro` only, wi
 
 **Your answer:** Explain, step by step, where the container found the Atlas settings in that run.
 
-Analyze.py first tried to get into Mongo using the enviornment variables. Upon those failing (since they weren't passed in), the script successfully accessed them in via AWS' SSM paremeter, allowing it to write to the database/cluster.
+Analyze.py first tried to get into Mongo using the enviornment variables. Upon those failing (since they weren't passed in), the script successfully accessed them in via AWS' SSM paremeter, allowing it to write to the database/cluster since the disk was mounted.
 
 ## 3. Same tag, different image
 
@@ -29,4 +29,6 @@ Run `docker images book-analysis`, and note the image ID of `book-analysis:0.1.0
 Before: bacbc118b175  
 After: 1409675661b6  
   
-They are different because the hashing algorithm evaluates to different hashes since the binaries are different. I should have just pushed a new version number with my updated description.
+They are different because the hashing algorithm evaluates to different hashes since the binaries are different. This type of overwriting would break the entire point of containers for someone expecting a certain version since the file has chnaged but the tag has not.
+  
+I should have just pushed a new tag with my updated description.
